@@ -116,8 +116,8 @@ Temel modelden başlayarak her seferinde tek bir şey değiştirilmiştir (15 ep
 | | |
 |---|---|
 | Gerçek numara | 24120205046 |
-| Tahmin | `24120205046` |
-| Doğruluk | `11` / 11 |
+| Tahmin | `24120208946` |
+| Doğruluk | `9` / 11 |
 
 ![Tahminler](results/handwriting_predictions.png)
 
