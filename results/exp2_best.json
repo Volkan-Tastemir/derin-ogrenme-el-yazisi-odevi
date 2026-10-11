@@ -1,0 +1,18 @@
+{
+  "best_experiment": "geni\u015f (512-256)",
+  "config": {
+    "hidden": [
+      512,
+      256
+    ],
+    "dropout": 0.0,
+    "optimizer": "adam",
+    "lr": 0.001,
+    "batch_size": 128,
+    "epochs": 15,
+    "seed": 42
+  },
+  "val_acc": 0.9813333333333333,
+  "test_loss": 0.10302075119018554,
+  "test_acc": 0.9781
+}
