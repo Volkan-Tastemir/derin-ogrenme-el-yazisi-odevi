@@ -5,7 +5,7 @@ hiperparametre/mimari seçimleri karşılaştırılmış ve model **kendi el yaz
 CNN ve hazır eğitilmiş model **kullanılmamıştır** (PyTorch).
 
 - **Öğrenci No:** 24120205046
-- **Ad Soyad:** `<Volkan Taştemir>`
+- **Ad Soyad:** `Volkan Taştemir`
 
 ## Klasör Yapısı
 
