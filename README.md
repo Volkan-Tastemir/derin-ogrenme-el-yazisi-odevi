@@ -5,7 +5,7 @@ hiperparametre/mimari seçimleri karşılaştırılmış ve model **kendi el yaz
 CNN ve hazır eğitilmiş model **kullanılmamıştır** (PyTorch).
 
 - **Öğrenci No:** 24120205046
-- **Ad Soyad:** `<BURAYA YAZ>`
+- **Ad Soyad:** `<Volkan Taştemir>`
 
 ## Klasör Yapısı
 
@@ -67,12 +67,12 @@ nihai model için en sonda bir kez kullanılmıştır.
 
 | Metrik | Değer |
 |---|---|
-| Training loss | `<DOLDUR>` |
-| Validation loss | `<DOLDUR>` |
-| Training accuracy | `<DOLDUR>` |
-| Validation accuracy | `<DOLDUR>` |
-| Test accuracy | `<DOLDUR>` |
-| Eğitim süresi | `<DOLDUR>` sn (cihaz: `<CPU/GPU>`) |
+| Training loss | `0.011690545428923711` |
+| Validation loss | `0.094945068359375` |
+| Training accuracy | `0.9960185185185185` |
+| Validation accuracy | `0.9796666666666667` |
+| Test accuracy | `0.9796` |
+| Eğitim süresi | `13.190529599998627` sn (cihaz: `<CPU/GPU>`) |
 
 ![Deney 1 grafikleri](results/exp1_curves.png)
 
@@ -81,11 +81,22 @@ nihai model için en sonda bir kez kullanılmıştır.
 Temel modelden başlayarak her seferinde tek bir şey değiştirilmiştir (15 epoch): katman genişliği, derinlik, dropout,
 öğrenme oranı, optimizer (SGD+momentum) ve batch size.
 
-`<results/exp2_results.md içeriğini buraya yapıştır>`
+`| Deney | En iyi epoch | Train loss | Val loss | Train acc | Val acc | Süre (sn) |
+|---|---|---|---|---|---|---|
+| baseline (256-128, Adam 1e-3) | 15 | 0.0117 | 0.0949 | 0.9960 | 0.9797 | 9.8 |
+| dar (64-32) | 15 | 0.0248 | 0.1018 | 0.9917 | 0.9707 | 7.8 |
+| geniş (512-256) | 13 | 0.0161 | 0.0907 | 0.9948 | 0.9813 | 15.0 |
+| derin (256-128-64) | 11 | 0.0206 | 0.0865 | 0.9926 | 0.9802 | 10.8 |
+| dropout 0.3 | 14 | 0.0483 | 0.0768 | 0.9843 | 0.9802 | 12.9 |
+| Adam lr=1e-2 (yüksek) | 14 | 0.0922 | 0.2128 | 0.9774 | 0.9655 | 10.1 |
+| Adam lr=1e-4 (düşük) | 15 | 0.0528 | 0.0884 | 0.9854 | 0.9723 | 9.9 |
+| SGD lr=0.01 momentum=0.9 | 15 | 0.0061 | 0.0724 | 0.9993 | 0.9805 | 8.6 |
+| batch 32 | 12 | 0.0202 | 0.1011 | 0.9936 | 0.9800 | 22.5 |
+| batch 512 | 15 | 0.0083 | 0.0793 | 0.9979 | 0.9803 | 7.0 |`
 
 ![Karşılaştırma](results/exp2_comparison.png)
 
-**Seçilen en iyi konfigürasyon:** `<results/exp2_best.json>`  – Test accuracy: `<DOLDUR>`
+**Seçilen en iyi konfigürasyon:** `<results/exp2_best.json>`  – Test accuracy: `0.9781`
 
 ## Kendi El Yazım ile Test
 
@@ -105,8 +116,8 @@ Temel modelden başlayarak her seferinde tek bir şey değiştirilmiştir (15 ep
 | | |
 |---|---|
 | Gerçek numara | 24120205046 |
-| Tahmin | `<DOLDUR>` |
-| Doğruluk | `<DOLDUR>` / 11 |
+| Tahmin | `24120205046` |
+| Doğruluk | `11` / 11 |
 
 ![Tahminler](results/handwriting_predictions.png)
 
