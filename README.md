@@ -81,7 +81,7 @@ nihai model için en sonda bir kez kullanılmıştır.
 Temel modelden başlayarak her seferinde tek bir şey değiştirilmiştir (15 epoch): katman genişliği, derinlik, dropout,
 öğrenme oranı, optimizer (SGD+momentum) ve batch size.
 
-`| Deney | En iyi epoch | Train loss | Val loss | Train acc | Val acc | Süre (sn) |
+| Deney | En iyi epoch | Train loss | Val loss | Train acc | Val acc | Süre (sn) |
 |---|---|---|---|---|---|---|
 | baseline (256-128, Adam 1e-3) | 15 | 0.0117 | 0.0949 | 0.9960 | 0.9797 | 9.8 |
 | dar (64-32) | 15 | 0.0248 | 0.1018 | 0.9917 | 0.9707 | 7.8 |
@@ -92,7 +92,7 @@ Temel modelden başlayarak her seferinde tek bir şey değiştirilmiştir (15 ep
 | Adam lr=1e-4 (düşük) | 15 | 0.0528 | 0.0884 | 0.9854 | 0.9723 | 9.9 |
 | SGD lr=0.01 momentum=0.9 | 15 | 0.0061 | 0.0724 | 0.9993 | 0.9805 | 8.6 |
 | batch 32 | 12 | 0.0202 | 0.1011 | 0.9936 | 0.9800 | 22.5 |
-| batch 512 | 15 | 0.0083 | 0.0793 | 0.9979 | 0.9803 | 7.0 |`
+| batch 512 | 15 | 0.0083 | 0.0793 | 0.9979 | 0.9803 | 7.0 |
 
 ![Karşılaştırma](results/exp2_comparison.png)
 
