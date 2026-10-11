@@ -72,7 +72,7 @@ nihai model için en sonda bir kez kullanılmıştır.
 | Training accuracy | `0.9960185185185185` |
 | Validation accuracy | `0.9796666666666667` |
 | Test accuracy | `0.9796` |
-| Eğitim süresi | `13.190529599998627` sn (cihaz: `<CPU/GPU>`) |
+| Eğitim süresi | `13.190529599998627` sn (cihaz: `AMD Ryzen 7 7840HS w Radeon 780M Graphics 3.80 GHz / NVIDIA GeForce RTX 4050 Laptop GPU`) |
 
 ![Deney 1 grafikleri](results/exp1_curves.png)
 
